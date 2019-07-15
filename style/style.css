@@ -5,6 +5,7 @@ body {
     margin: 0;
 }
 
+/* --------------------- HEADER SECTION ----------------------------- */
 .header-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,7 +56,7 @@ body {
     font-family: sans-serif
 }
 
-/* nav section */
+/* ------------------ nav section -----------------------*/
 .nav {
     position: relative;
 }
@@ -199,7 +200,7 @@ body {
     font-weight: 400;
 }
 
-
+/* ------------------- info BLOCKS --------------------- */
 
 .info-blocks {
     display: grid;
@@ -268,7 +269,7 @@ body {
     margin-bottom: .7em;
 }
 
-/*  about us */
+/*  ---------------------- about us ------------------------------*/
 #about-us {
     text-align: center;
 }
@@ -369,7 +370,7 @@ body {
     margin-right: 1em;
 }
 
-/*  LOCATION */
+/*  ----------------- LOCATION ------------------- */
 
 
 .location-pic {
@@ -517,9 +518,8 @@ body {
     color: red;
 }
 
-/*  footer */
+/*  ----------- footer ------------------ */
 .footer-image-container {
-    /* min-height: 600px; */
     background-image: url(../images/bottom-phone-screen-bg.jpg);
     background-size: cover;
     display: grid;
@@ -563,6 +563,8 @@ body {
     background-color: #051121;
     padding: 3em 2em;
 }
+
+/* ------------- MEDIA QUERIES ------------------ */
 
 @media(max-width: 1460px) {
     
@@ -624,7 +626,7 @@ body {
     .cell-phone {
         width: 100%;
     }
-    
+
     .footer-header-small-screen {
         display: block;
     }
@@ -673,6 +675,14 @@ body {
         grid-template-columns: 1fr 1fr;
         align-items: center;
 
+    }
+
+    .info-box > img {
+        margin-left: 0;
+    }
+
+    .info-grey.big {
+        font-size: 16px;
     }
 
     .hamburger-container {
@@ -751,6 +761,10 @@ body {
         padding: 0;
         margin: 1em auto;
         width: 90%;
+    }
+
+    .about-us-box__title {
+        font-size: 38px;
     }
 
     .title-container {
@@ -881,6 +895,11 @@ body {
      .about-us-text {
          width: 99%;
      }
+
+     .about-us-box__title {
+        font-size: 28px;
+    }
+
      .card-title.small {
         font-size: 30px;
     }

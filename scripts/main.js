@@ -35,13 +35,14 @@ window.addEventListener('resize', () => {
 locationButton.forEach((button, index) => {
     
     button.addEventListener('click', (e) => {
+        console.log(e)
         if(imgTracker) {
             imgTracker = !imgTracker;
-            e.target.parentElement.children[10].style.display = 'block';
+            e.target.nextElementSibling.style.display = 'block';
         } else {
             imgTracker = !imgTracker
             locationImg.forEach((image) => {
-                e.target.parentElement.children[10].style.display = 'none';
+                e.target.nextElementSibling.style.display = 'none';
             });
         }
     });
